@@ -1,0 +1,49 @@
+mysql> desc zbp_member;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| mem_ID       | int          | NO   | PRI | NULL    | auto_increment |
+| mem_Guid     | varchar(36)  | NO   |     |         |                |
+| mem_Level    | tinyint      | NO   | MUL | 0       |                |
+| mem_Status   | tinyint      | NO   |     | 0       |                |
+| mem_Name     | varchar(255) | NO   | MUL |         |                |
+| mem_Password | varchar(255) | NO   |     |         |                |
+| mem_Email    | varchar(255) | NO   |     |         |                |
+| mem_HomePage | varchar(255) | NO   |     |         |                |
+| mem_IP       | varchar(255) | NO   |     |         |                |
+| mem_PostTime | int          | NO   |     | 0       |                |
+| mem_Alias    | varchar(255) | NO   | MUL |         |                |
+| mem_Intro    | text         | NO   |     | NULL    |                |
+| mem_Articles | int          | NO   |     | 0       |                |
+| mem_Pages    | int          | NO   |     | 0       |                |
+| mem_Comments | int          | NO   |     | 0       |                |
+| mem_Uploads  | int          | NO   |     | 0       |                |
+| mem_Template | varchar(255) | NO   |     |         |                |
+| mem_Meta     | longtext     | NO   |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+18 rows in set (0.00 sec)
+
+mysql> select * from zbp_member limit 1\G;
+*************************** 1. row ***************************
+      mem_ID: 1
+    mem_Guid: 5982765f50dde221110139
+   mem_Level: 1
+  mem_Status: 0
+    mem_Name: feihu1996
+mem_Password: b2058f42d89bc1f408ca9e12509ac921
+   mem_Email: gsxxg5201314@outlook.com
+mem_HomePage: http://www.feihu1996.cn
+      mem_IP: 112.28.129.240
+mem_PostTime: 1501722207
+   mem_Alias: 
+   mem_Intro: 
+mem_Articles: 477
+   mem_Pages: 1
+mem_Comments: 7
+ mem_Uploads: 89
+mem_Template: 
+    mem_Meta: 
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

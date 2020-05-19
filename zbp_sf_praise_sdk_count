@@ -1,0 +1,21 @@
+mysql> desc zbp_sf_praise_sdk_count;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| praise_id      | int          | NO   | PRI | NULL    | auto_increment |
+| praise_post_id | int          | NO   |     | 0       |                |
+| praise_value   | int          | NO   |     | 0       |                |
+| praise_ip      | varchar(255) | NO   |     |         |                |
++----------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql> select * from zbp_sf_praise_sdk_count limit 1\G;
+*************************** 1. row ***************************
+     praise_id: 1
+praise_post_id: 12
+  praise_value: 1
+     praise_ip: 112.28.153.66
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

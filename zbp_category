@@ -1,0 +1,38 @@
+mysql> desc zbp_category;
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| cate_ID          | int          | NO   | PRI | NULL    | auto_increment |
+| cate_Name        | varchar(255) | NO   |     |         |                |
+| cate_Order       | int          | NO   | MUL | 0       |                |
+| cate_Count       | int          | NO   |     | 0       |                |
+| cate_Alias       | varchar(255) | NO   |     |         |                |
+| cate_Intro       | text         | NO   |     | NULL    |                |
+| cate_RootID      | int          | NO   |     | 0       |                |
+| cate_ParentID    | int          | NO   |     | 0       |                |
+| cate_Template    | varchar(255) | NO   |     |         |                |
+| cate_LogTemplate | varchar(255) | NO   |     |         |                |
+| cate_Meta        | longtext     | NO   |     | NULL    |                |
+| cate_Type        | int          | NO   |     | 0       |                |
++------------------+--------------+------+-----+---------+----------------+
+12 rows in set (0.00 sec)
+
+
+mysql> select * from zbp_category limit 1\G;
+*************************** 1. row ***************************
+         cate_ID: 12
+       cate_Name: PHP
+      cate_Order: 3
+      cate_Count: 23
+      cate_Alias: 
+      cate_Intro: 
+     cate_RootID: 16
+   cate_ParentID: 16
+   cate_Template: 
+cate_LogTemplate: 
+       cate_Meta: a:1:{s:3:"gjc";s:3:"PHP";}
+       cate_Type: 0
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

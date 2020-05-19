@@ -1,0 +1,40 @@
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| comm_ID         | int          | NO   | PRI | NULL    | auto_increment |
+| comm_LogID      | int          | NO   | MUL | 0       |                |
+| comm_IsChecking | tinyint(1)   | NO   | MUL | 0       |                |
+| comm_RootID     | int          | NO   |     | 0       |                |
+| comm_ParentID   | int          | NO   |     | 0       |                |
+| comm_AuthorID   | int          | NO   |     | 0       |                |
+| comm_Name       | varchar(255) | NO   |     |         |                |
+| comm_Email      | varchar(255) | NO   |     |         |                |
+| comm_HomePage   | varchar(255) | NO   |     |         |                |
+| comm_Content    | text         | NO   |     | NULL    |                |
+| comm_PostTime   | int          | NO   |     | 0       |                |
+| comm_IP         | varchar(255) | NO   |     |         |                |
+| comm_Agent      | text         | NO   |     | NULL    |                |
+| comm_Meta       | longtext     | NO   |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+14 rows in set (0.00 sec)
+
+mysql> select * from zbp_comment limit 1\G;
+*************************** 1. row ***************************
+        comm_ID: 2
+     comm_LogID: 287
+comm_IsChecking: 0
+    comm_RootID: 0
+  comm_ParentID: 0
+  comm_AuthorID: 0
+      comm_Name: Hello_world
+     comm_Email: 
+  comm_HomePage: 
+   comm_Content: 为什么按照步骤来了，却没有桌面快捷方式阿
+  comm_PostTime: 1520996173
+        comm_IP: 125.70.77.131
+     comm_Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+      comm_Meta: 
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

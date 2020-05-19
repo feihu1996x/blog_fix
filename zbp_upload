@@ -1,0 +1,35 @@
+mysql> desc zbp_upload;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| ul_ID         | int          | NO   | PRI | NULL    | auto_increment |
+| ul_AuthorID   | int          | NO   |     | 0       |                |
+| ul_Size       | int          | NO   |     | 0       |                |
+| ul_Name       | varchar(255) | NO   |     |         |                |
+| ul_SourceName | varchar(255) | NO   |     |         |                |
+| ul_MimeType   | varchar(255) | NO   |     |         |                |
+| ul_PostTime   | int          | NO   |     | 0       |                |
+| ul_DownNums   | int          | NO   |     | 0       |                |
+| ul_LogID      | int          | NO   |     | 0       |                |
+| ul_Intro      | text         | NO   |     | NULL    |                |
+| ul_Meta       | longtext     | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> select * from zbp_upload limit 1\G;
+*************************** 1. row ***************************
+        ul_ID: 1
+  ul_AuthorID: 1
+      ul_Size: 86912
+      ul_Name: 20170809212249_51157.png
+ul_SourceName: img1.png
+  ul_MimeType: image/png
+  ul_PostTime: 1502284969
+  ul_DownNums: 0
+     ul_LogID: 0
+     ul_Intro: 
+      ul_Meta: 
+1 row in set (0.01 sec)
+
+ERROR: 
+No query specified

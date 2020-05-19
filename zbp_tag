@@ -1,0 +1,32 @@
+mysql> desc zbp_tag;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| tag_ID       | int          | NO   | PRI | NULL    | auto_increment |
+| tag_Name     | varchar(255) | NO   |     |         |                |
+| tag_Order    | int          | NO   |     | 0       |                |
+| tag_Count    | int          | NO   |     | 0       |                |
+| tag_Alias    | varchar(255) | NO   |     |         |                |
+| tag_Intro    | text         | NO   |     | NULL    |                |
+| tag_Template | varchar(255) | NO   |     |         |                |
+| tag_Meta     | longtext     | NO   |     | NULL    |                |
+| tag_Type     | int          | NO   |     | 0       |                |
++--------------+--------------+------+-----+---------+----------------+
+9 rows in set (0.01 sec)
+
+
+mysql> select * from zbp_tag limit 1\G;
+*************************** 1. row ***************************
+      tag_ID: 87
+    tag_Name: 设计模式
+   tag_Order: 0
+   tag_Count: 2
+   tag_Alias: 
+   tag_Intro: 
+tag_Template: 
+    tag_Meta: 
+    tag_Type: 0
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

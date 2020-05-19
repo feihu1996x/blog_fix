@@ -1,0 +1,27 @@
+mysql> desc zbp_sf_praise_sdk_basecount;
++--------------------+------+------+-----+---------+----------------+
+| Field              | Type | Null | Key | Default | Extra          |
++--------------------+------+------+-----+---------+----------------+
+| praise_id          | int  | NO   | PRI | NULL    | auto_increment |
+| praise_post_id     | int  | NO   |     | 0       |                |
+| praise_base_value1 | int  | NO   |     | 0       |                |
+| praise_base_value2 | int  | NO   |     | 0       |                |
+| praise_base_value3 | int  | NO   |     | 0       |                |
+| praise_base_value4 | int  | NO   |     | 0       |                |
+| praise_base_value5 | int  | NO   |     | 0       |                |
++--------------------+------+------+-----+---------+----------------+
+7 rows in set (0.00 sec)
+
+mysql> select * from zbp_sf_praise_sdk_basecount limit 1\G;
+*************************** 1. row ***************************
+         praise_id: 2
+    praise_post_id: 5
+praise_base_value1: 0
+praise_base_value2: 0
+praise_base_value3: 0
+praise_base_value4: 0
+praise_base_value5: 0
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified

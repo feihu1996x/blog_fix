@@ -1,0 +1,34 @@
+mysql> desc zbp_module;
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| mod_ID          | int          | NO   | PRI | NULL    | auto_increment |
+| mod_Name        | varchar(255) | NO   |     |         |                |
+| mod_FileName    | varchar(255) | NO   |     |         |                |
+| mod_Content     | text         | NO   |     | NULL    |                |
+| mod_SidebarID   | int          | NO   |     | 0       |                |
+| mod_HtmlID      | varchar(255) | NO   |     |         |                |
+| mod_Type        | varchar(5)   | NO   |     |         |                |
+| mod_MaxLi       | int          | NO   |     | 0       |                |
+| mod_Source      | varchar(255) | NO   |     |         |                |
+| mod_IsHideTitle | tinyint(1)   | NO   |     | 0       |                |
+| mod_Meta        | longtext     | NO   |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+
+mysql> select * from zbp_module limit 1\G;
+*************************** 1. row ***************************
+         mod_ID: 1
+       mod_Name: 导航栏
+   mod_FileName: navbar
+    mod_Content: <li id="nvabar-item-index"> <a href="{#ZC_BLOG_HOST#}">首页</a></li><li id="navbar-page-200"><a href="{#ZC_BLOG_HOST#}?id=200">留言本</a></li><li id="navbar-category-16"> <a href="{#ZC_BLOG_HOST#}?cate=16">编程语言</a>    <ul>        <li id="navbar-category-10"> <a href="{#ZC_BLOG_HOST#}?cate=10">Python</a> </li>        <li id="navbar-category-8"> <a href="{#ZC_BLOG_HOST#}?cate=8">JavaScript</a> </li>        <li id="navbar-category-9"> <a href="{#ZC_BLOG_HOST#}?cate=9">C/C++</a> </li>        <li id="navbar-category-12"> <a href="{#ZC_BLOG_HOST#}?cate=12">PHP</a> </li>        <li id="navbar-category-17"> <a href="{#ZC_BLOG_HOST#}?cate=17">Java</a> </li>        <li id="navbar-category-18"> <a href="{#ZC_BLOG_HOST#}?cate=18">Go</a> </li>        <li id="navbar-category-19"> <a href="{#ZC_BLOG_HOST#}?cate=19">SQL</a> </li>        <li id="navbar-category-20"> <a href="{#ZC_BLOG_HOST#}?cate=20">NoSQL</a> </li>        <li id="navbar-category-21"> <a href="{#ZC_BLOG_HOST#}?cate=21">Visual Basic</a> </li>        <li id="navbar-category-22"> <a href="{#ZC_BLOG_HOST#}?cate=22">Ruby</a> </li>        <li id="navbar-category-23"> <a href="{#ZC_BLOG_HOST#}?cate=23">汇编语言</a> </li>        <li id="navbar-category-25"> <a href="{#ZC_BLOG_HOST#}?cate=25">C#</a> </li>    </ul></li><li id="navbar-category-28"> <a href="{#ZC_BLOG_HOST#}?cate=28">其他</a>    <ul>        <li id="navbar-category-7"> <a href="{#ZC_BLOG_HOST#}?cate=7">Linux</a> </li>        <li id="navbar-category-26"> <a href="{#ZC_BLOG_HOST#}?cate=26">IoT</a> </li>        <li id="navbar-category-29"> <a href="{#ZC_BLOG_HOST#}?cate=29">软件测试</a> </li>        <li id="navbar-category-30"> <a href="{#ZC_BLOG_HOST#}?cate=30">计算机网络</a> </li>        <li id="navbar-category-31"> <a href="{#ZC_BLOG_HOST#}?cate=31">云计算</a> </li>        <li id="navbar-category-33"> <a href="{#ZC_BLOG_HOST#}?cate=33">大数据</a> </li>    </ul></li><li id="navbar-category-99"><a href="https://github.com/feihu1996x">GitHub</a></li>
+  mod_SidebarID: 0
+     mod_HtmlID: divNavBar
+       mod_Type: ul
+      mod_MaxLi: 0
+     mod_Source: system
+mod_IsHideTitle: 0
+       mod_Meta: a:1:{s:9:"norefresh";b:1;}
+1 row in set (0.00 sec)
+
+ERROR: 
+No query specified
